@@ -14,7 +14,7 @@
     "startup": "application",
     "boot": "auto",
     "usb": "true",
-    "init": "false"
+    "init": "false",
     "homeassistant_api": true,
     "ports": {
         "631/tcp": 631,
