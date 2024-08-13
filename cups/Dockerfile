@@ -3,6 +3,7 @@ FROM $BUILD_FROM
 
 LABEL io.hass.version="1" io.hass.type="addon" io.hass.arch="armhf|aarch64|i386|amd64"
 
+RUN mkdir -p /var/run/dbus
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         cups \
