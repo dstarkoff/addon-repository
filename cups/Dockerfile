@@ -28,7 +28,8 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install nginx nginx-module-njs \
     && apt-get clean -y \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && chmod 755 /usr/sbin/*
 
 COPY rootfs /
 
