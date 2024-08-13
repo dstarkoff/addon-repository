@@ -1,2 +1,2 @@
 #!/bin/sh
-mkdir -p /var/run/dbus
+# mkdir -p /var/run/dbus
