@@ -1,36 +1,36 @@
-#name: CUPS Print Server
-#version: 2.0.2
-#stage: experimental
-#slug: cups
-# image: ghcr.io/maxwinterstein/homeassistant-addon-cups-{arch}
-#image: "jethrovo/{arch}-addon-cups"
-#description: A CUPS print server with Avahi installed
-#url: https://github.com/MaxFunJJ/addon-cups/
-#arch:
-#  - amd64
-#  - armv7
-#  - aarch64
-#usb: true
+name: CUPS Print Server
+version: 2.0.2
+stage: experimental
+slug: cups
+image: ghcr.io/maxwinterstein/homeassistant-addon-cups-{arch}
+image: "jethrovo/{arch}-addon-cups"
+description: A CUPS print server with Avahi installed
+url: https://github.com/MaxFunJJ/addon-cups/
+arch:
+ - amd64
+ - armv7
+ - aarch64
+usb: true
 init: false
-#homeassistant_api: true
-# host_network: true
-#ports:
-#  631/tcp: 631
-#  631/udp: 631
-#ports_description:
-#  631/tcp: For other devices on the local network to print to this server
-#  631/udp: For other devices on the local network to print to this server
-# ingress: false
-#map:
-#  - ssl
-#options:
-#  ssl: true
-#   certfile: fullchain.pem
-#   keyfile: privkey.pem
-#   require_ssl: true
-# schema:
-#   ssl: bool
-#   cafile: str?
-#   certfile: str
-#   keyfile: str
-#   require_ssl: bool
+homeassistant_api: true
+host_network: true
+ports:
+ 631/tcp: 631
+ 631/udp: 631
+ports_description:
+ 631/tcp: For other devices on the local network to print to this server
+ 631/udp: For other devices on the local network to print to this server
+ingress: false
+map:
+ - ssl
+options:
+ ssl: true
+  certfile: fullchain.pem
+  keyfile: privkey.pem
+  require_ssl: true
+schema:
+  ssl: bool
+  cafile: str?
+  certfile: str
+  keyfile: str
+  require_ssl: bool
